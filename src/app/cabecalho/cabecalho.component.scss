@@ -1,0 +1,21 @@
+@import "../app.component.scss";
+mat-toolbar{
+  background-color: $corprincipal;
+  color: $branco;
+  padding-right: 210px;
+
+    h1{
+      font-size: $fontetitulo;
+      padding-left: 200px;
+      cursor: pointer;
+    }
+    .menu-spacer {
+      flex: 1 1 auto;
+    }
+    button{
+      &:hover{
+        color:$corprincipal;
+        background: $branco;
+      }
+    }
+  }
