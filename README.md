@@ -7,14 +7,14 @@
 "Pages" é uma plataforma de vendas de livros, com público alvo +12. Projeto realizado para o curso Start <tech>
 
 ## Técnologias utilizadas:
--Angular;
--Scss;
+- Angular;
+-  Scss;
 -Material Ui.
 
 ## Intruções para instalação:
 Angular precisa instalado node.js versão 16 ou superior;
--"git clone" do projeto no terminal; (https://github.com/CamillyDionisio/site.git)
--Entrar na pasta do projeto. (cd+ nome da pasta)
+- "git clone" do projeto no terminal; (https://github.com/CamillyDionisio/site.git)
+- Entrar na pasta do projeto. (cd+ nome da pasta)
 **-Instalar angular global:**
 npm install -g @angular/cli;
 **-Instalar demais dependências:**
