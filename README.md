@@ -13,14 +13,11 @@
 
 ## Intruções para instalação:
 - Angular precisa instalado node.js versão 16 ou superior;
-- "git clone" do projeto no terminal; (https://github.com/CamillyDionisio/site.git)
-- Entrar na pasta do projeto. (cd+ nome da pasta)
-- **Instalar angular global:**
-npm install -g @angular/cli;
-- **Instalar demais dependências:**
-npm install
-- **Rodar no servidor:**
-- ng serve
+- "git clone" do projeto no terminal; (https://github.com/CamillyDionisio/site.git);
+- Entrar na pasta do projeto: (cd+ nome da pasta);
+- **Instalar angular global:** npm install -g @angular/cli;
+- **Instalar demais dependências:** npm install;
+- **Rodar no servidor:** ng serve.
 
 Seu projeto estará rodando na  http://localhost:4200/
 
