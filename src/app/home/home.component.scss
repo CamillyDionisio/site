@@ -1,5 +1,9 @@
 @import "../app.component.scss";
 
+.mat-mdc-form-field + .mat-mdc-form-field {
+  margin-left: 8px;
+}
+
 .container{
   width:1140px;
   display: block;
@@ -9,6 +13,10 @@
 h1{
   font-size: 50px;
 
+}
+h2{
+  color: gray;
+  text-align: center;
 }
 mat-grid-tile {
     mat-card{
@@ -27,6 +35,7 @@ mat-grid-tile {
               font-size: 15px;
               padding-top: 15px;
               text-align: center;
+
             }
             ul{
               padding-top: 0px;
@@ -42,9 +51,21 @@ mat-grid-tile {
     }
     mat-card-actions{
       padding-bottom: 20px;
+      gap: 15px;
+    .favorite{
+      width: 20%;
+      background-color: $branco;
+      border: 2px solid $corprincipal;
+      mat-icon{
+        color: $corfinal;
+        &:hover{
+          color:$branco;
+        }
+      }
+    }
     button{
       display: block;
-      width: 100%;
+      width: 80%;
       height: 40px;
       cursor: pointer;
       border:none;
@@ -52,10 +73,14 @@ mat-grid-tile {
       background-color: $corprincipal;
       color: $branco;
       &:hover{
-        background: $corfinal;
+        background-color: $corfinal;
+        color: $branco;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.15), 0 1px 2px rgba(0,0,0,0.11);
+
       }
-    }
+     }
     }
   }
 }
+
 

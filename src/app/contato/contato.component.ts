@@ -4,17 +4,17 @@ import {NgIf} from '@angular/common'
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
-
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @Component({
   selector: 'app-contato',
   templateUrl: './contato.component.html',
   styleUrls: ['./contato.component.scss'],
   standalone: true,
-  imports: [MatFormFieldModule, MatSelectModule, MatInputModule, FormsModule, ReactiveFormsModule, NgIf],
+  imports: [MatFormFieldModule, MatSelectModule, MatInputModule, FormsModule, ReactiveFormsModule, NgIf, MatExpansionModule],
 })
 export class ContatoComponent {
-
+  panelOpenState = false;
   nome = new FormControl('', Validators.required);
   email = new FormControl('', [ Validators.required, Validators.email ]);
   assunto = new FormControl('');

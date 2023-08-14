@@ -3,18 +3,26 @@ import { Router} from '@angular/router'
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatCardModule} from '@angular/material/card';
 import { NgFor, NgIf } from '@angular/common';
+import {MatIconModule} from '@angular/material/icon';
+
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   standalone: true,
-  imports: [MatGridListModule, MatCardModule, NgFor, NgIf]
+  imports: [MatGridListModule, MatCardModule, NgFor, NgIf, MatIconModule]
 })
 
 export class HomeComponent {
 
+
   constructor(private router: Router){ }
+
+
+  toogleFavorito(index: number): void {
+    this.livros[index].favorito = !this.livros[index].favorito
+  }
 
   verDetalhes(livroId:string){
     this.router.navigate(['/detalhes', livroId]);
@@ -70,7 +78,7 @@ export class HomeComponent {
   categoria: '+15',
   valor: 'R$38,90',
   genero: 'romance',
-  favorito: true,
+  favorito: false,
 
 },
 {
@@ -80,7 +88,7 @@ export class HomeComponent {
   categoria: '+14',
   valor: 'R$36,99',
   genero: 'romance',
-  favorito: true,
+  favorito: false,
 
 },
 {
@@ -90,7 +98,7 @@ export class HomeComponent {
   categoria: '+16',
   valor: 'R$59,90',
   genero: 'romance',
-  favorito: true,
+  favorito: false,
 
 },
 {
@@ -100,7 +108,7 @@ export class HomeComponent {
   categoria: '+12',
   valor: 'R$33,90',
   genero: 'ficção',
-  favorito: true,
+  favorito: false,
 
 },
  ]

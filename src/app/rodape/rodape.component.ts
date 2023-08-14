@@ -23,7 +23,7 @@ redesSociais: Array<any> = [
   },
   {nome:'Github',
   foto: 'https://cdn-icons-png.flaticon.com/512/25/25231.png',
-  link: ''
+  link: 'https://github.com/CamillyDionisio'
 }
 ]
 }

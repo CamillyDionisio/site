@@ -4,6 +4,9 @@ mat-toolbar{
   color: $branco;
   padding-right: 210px;
 
+  a {
+    color: inherit;
+   }
     h1{
       font-size: $fontetitulo;
       padding-left: 200px;
