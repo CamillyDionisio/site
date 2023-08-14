@@ -1,19 +1,28 @@
 # Projeto "Pages"- plataforma de livros
 
 <a href="https://ibb.co/H2Dq43d"><img src="https://i.ibb.co/j5vDfsR/pagina.png" alt="pagina" border="0"></a>
-Esse projeto foi gerado pelo [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8. 
 
-## Development server
+## Descrição de projeto:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+"Pages" é uma plataforma de vendas de livros, com público alvo +12. Projeto realizado para o curso Start <tech>
 
-## Code scaffolding
+## Técnologias utilizadas:
+-Angular;
+-Scss;
+-Material Ui.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Intruções para instalação:
+Angular precisa instalado node.js versão 16 ou superior;
+-"git clone" do projeto no terminal; (https://github.com/CamillyDionisio/site.git)
+-Entrar na pasta do projeto. (cd+ nome da pasta)
+**-Instalar angular global:**
+npm install -g @angular/cli;
+**-Instalar demais dependências:**
+npm install
+**Rodar no servidor:**
+ng serve
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Seu projeto estará rodando na  http://localhost:4200/
 
 ## Running unit tests
 
