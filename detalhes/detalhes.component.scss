@@ -1,0 +1,66 @@
+@import "../app.component.scss";
+
+#titulo{
+  width:1140px;
+  display: block;
+  margin: auto;
+  padding-top: 30px;
+  background-color:$cor2 ;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 10px 20px grey;
+}
+h1{
+  text-align: center;
+  font-weight: bold;
+  color: gray;
+
+}
+#fundoinicio{
+  margin-top: 70px;
+  background-color: $cor2;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 7px;
+img{
+  width: 220px;
+  height: 300px;
+  border: none;
+  border-radius: 300px;
+  border-width: 10px;
+  border-style: solid;
+  border-color:$branco;
+
+  }
+}
+
+.container{
+  width: 1140px;
+  display: flex;
+  margin: auto;
+  padding-top: 40px;
+  text-align: justify;
+  .sobreMim{
+    width:50%;
+  }
+    h2{
+      font-style:italic;
+      font-weight: bold;
+      text-align: center;
+      color: gray;
+      font-weight: bold;
+    }
+    h3{
+      font-weight: bold;
+      }
+      .SobreMim2{
+        width:50%;
+        padding-left: 80px;
+      }
+    }
+
+

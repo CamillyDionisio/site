@@ -1,0 +1,18 @@
+<footer>
+  <div class="container">
+    <div class="copyright">
+      <p> {{title}} | {{copyright}} por {{developer}} </p>
+    </div>
+    <div class="links">
+      <ul>
+      <li *ngFor="let redes of redesSociais">
+        <a [href]="redes.link" target="_blank">
+          <img src="{{redes.foto}}" alt="{{redes.nome}}">
+        </a>
+
+      </li>
+    </ul>
+    </div>
+  </div>
+
+</footer>

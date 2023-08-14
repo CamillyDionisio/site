@@ -1,0 +1,134 @@
+
+<div class="container">
+  <h1>FALE CONOSCO</h1>
+  <form (ngSubmit)="submitForm()">
+      <mat-form-field>
+          <mat-label>Digite seu nome:</mat-label>
+          <input matInput placeholder="EX: Nome + Sobrenome" [formControl]="nome" required />
+          <mat-error *ngIf="nome.invalid">{{ getErrorMessage() }}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Digite seu e-mail:</mat-label>
+          <input matInput placeholder="email@gmail.com" [formControl]="email" required>
+          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Selecione o assunto do contato</mat-label>
+          <mat-select [formControl]="assunto">
+              <mat-option value="site">Estou com dificuldade em navegar/comprar no site</mat-option>
+              <mat-option value="suporte">Quero fazer uma reclamação</mat-option>
+              <mat-option value="fac">Tenho sugestões de livros</mat-option>
+          </mat-select>
+      </mat-form-field>
+      <mat-form-field>
+          <mat-label>Digite sua mensagem</mat-label>
+          <textarea matInput [formControl]="mensagem"></textarea>
+          <mat-error *ngIf="mensagem.invalid">{{getErrorMessage()}}</mat-error>
+      </mat-form-field>
+      <button mat-button [disabled]="(nome.invalid || email.invalid || mensagem.invalid ? 'true' : '')" type="submit">
+          Enviar
+      </button>
+  </form>
+
+<div id="frequentes">
+<h2> Perguntas frequentes:</h2>
+<mat-accordion>
+  <mat-expansion-panel hideToggle>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Vocês têm uma política de privacidade para proteger meus dados pessoais?
+      </mat-panel-title>
+      <mat-panel-description>
+        Sim,  Suas informações pessoais serão tratadas com o máximo cuidado.
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>Sim, valorizamos a privacidade de nossos clientes e temos uma política de privacidade rigorosa em vigor. Suas informações pessoais
+       serão tratadas com o máximo cuidado e não serão compartilhadas com terceiros.</p>
+  </mat-expansion-panel>
+
+
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Quais métodos de pagamento vocês aceitam?
+      </mat-panel-title>
+      <mat-panel-description>
+        Cartões, pix e boleto.
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>Aceitamos os principais cartões de crédito/Débito(Visa, MasterCard, American Express), pix, boleto bancário e também pagamentos via PayPal,</p>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel (opened)="panelOpenState = true"
+  (closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+  Qual é o prazo de entrega para os livros encomendados?
+</mat-panel-title>
+<mat-panel-description>
+  O prazo de entrega varia de acordo com a sua localização.
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p>O prazo de entrega varia de acordo com a sua localização. Normalmente, nossos envios levam de 3 a 7 dias úteis para chegar após o processamento do pedido.</p>
+</mat-expansion-panel>
+
+<mat-expansion-panel (opened)="panelOpenState = true"
+(closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+  Posso devolver um livro se eu não gostar?
+</mat-panel-title>
+<mat-panel-description>
+Sim, no prazo de 7 dias úteis.
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p>Sim, aceitamos devoluções dentro de 7 dias a partir da data de recebimento, desde que o livro esteja em condições de revenda.
+   Consulte nossa política de devolução para obter mais detalhes.</p>
+</mat-expansion-panel>
+
+<mat-expansion-panel (opened)="panelOpenState = true"
+(closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+  Vocês oferecem frete grátis?
+</mat-panel-title>
+<mat-panel-description>
+  Para pedidos acima de R$50.
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p>Sim, oferecemos frete grátis para pedidos acima de $50. Para pedidos abaixo desse valor, há uma taxa de envio padrão que será exibida durante o checkout.</p>
+</mat-expansion-panel>
+
+<mat-expansion-panel (opened)="panelOpenState = true"
+(closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+  Como posso acompanhar meu pedido?
+</mat-panel-title>
+<mat-panel-description>
+Link de rastreamento encaminhado via e-mail.
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p>Assim que seu pedido for despachado, você receberá um e-mail com as informações de rastreamento e um link para acompanhar o
+  status da entrega.</p>
+</mat-expansion-panel>
+
+<mat-expansion-panel (opened)="panelOpenState = true"
+(closed)="panelOpenState = false">
+<mat-expansion-panel-header>
+<mat-panel-title>
+  Como faço para entrar em contato com o serviço de atendimento ao cliente?
+</mat-panel-title>
+<mat-panel-description>
+Através do formulário do site das 9h às 18h.
+</mat-panel-description>
+</mat-expansion-panel-header>
+<p>Você pode entrar em contato conosco através do formulário de contato em nosso site ou enviar um e-mail para o endereço de
+  suporte fornecido. Nosso horário de atendimento é de segunda a sexta, das 9h às 18h.</p>
+</mat-expansion-panel>
+
+</mat-accordion>
+</div>
+</div>
+
