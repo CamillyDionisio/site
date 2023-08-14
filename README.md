@@ -4,7 +4,7 @@
 
 ## Descrição de projeto:
 
-"Pages" é uma plataforma de vendas de livros, com público alvo +12. Projeto realizado para o curso Start <tech>
+"Pages" é uma plataforma de vendas de livros. Projeto realizado para o curso Start <tech>- Na totvs, em parceria com a Ada tech.
 
 ## Técnologias utilizadas:
 - Angular;
@@ -26,8 +26,7 @@
 
 ## Autores do projeto
 - Camilly Dionísio;
-- Com o auxilio: Roosevelt Franklin,
-
+- Com o auxilio: Roosevelt Franklin.
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
