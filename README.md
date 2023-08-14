@@ -1,6 +1,7 @@
-# Instalar
+# Projeto "Pages"- plataforma de livros
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
+<a href="https://ibb.co/H2Dq43d"><img src="https://i.ibb.co/j5vDfsR/pagina.png" alt="pagina" border="0"></a>
+Esse projeto foi gerado pelo [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8. 
 
 ## Development server
 
